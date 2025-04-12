@@ -51,3 +51,235 @@
     font-weight: 800;
     font-style: normal;
   } */
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  /* primary styles */
+  .primary-color{
+    color: #3A3A3A;
+  }
+  .display-flex{
+    display: flex;
+  }
+  /* header */
+  header, main{
+    max-width: 1440px;
+    margin: 50px auto;
+  }
+  .navbar{
+    
+    justify-content: space-between;
+    align-items: center;
+  }
+.header-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+  .nav-item{
+   
+    gap: 20px;
+    /* list-style: none; */
+  }
+  .nav-item li{
+    list-style: none;
+  }
+  .nav-item li a{
+    text-decoration: none;
+   
+  }
+
+  /* Banner */
+  .banner{
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 2rem;
+  }
+
+  .banner-content{
+   
+  }
+  .banner-title{
+    font-size: 52px;
+    font-weight: 700;
+  }
+  .banner-description{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 1.25rem 0;
+  }
+  .primary-btn{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 50px;
+    background-color: #E02C6D;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.6s;
+  }
+  .primary-btn:hover{
+    background-color: #90284e;
+  }
+  .banner-img img{
+    width: 100%;
+    background-image: url('/images/Circle\ design.svg');
+  }
+
+  /* main */
+  main{
+    margin-top: 4rem;
+    
+  }
+
+  .media{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1.25re,;
+    border: 1px solid #989898;
+    border-left: none;
+    border-right: none;
+    padding: 20px 0px;
+  }
+
+/* collection-section */
+.collection{
+    margin-top: 4rem;
+}
+.collection-title{
+    text-align: center;
+    margin: 20px;
+    font-size: 28px;
+    font-weight: 600;
+
+}
+  .products-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    border: none;
+    
+  }
+  .product-card{
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+  }
+  .product-card img{
+    width: 100%;
+  }
+  .product-name{
+    font-size: 28px;
+    font-weight: 500;
+
+  }
+  .product-price{
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .product-description{
+    font-size: 14px;
+    font-weight: 700;
+    color: #787885;
+  }
+  .see-more{
+    font-size: 16px;
+    font-weight: 700;
+    color: #E02C6D;
+    float: right;
+  }
+
+  /* features */
+  .features{
+    margin-top: 4em;
+    justify-content: space-between;
+    align-items: center;
+    gap: 140px;
+  }
+  /* .features-img img{
+    width: 100%;
+  } */
+  .features-title{
+    font-size: 38px;
+    font-weight: 700;
+    color: #0a0826;
+  }
+  .features-description{
+    font-size: 16px;
+    font-weight: 700;
+    color: #6C6C6C;
+  }
+
+  /* footer */
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: rgb(0, 2, 46);
+    padding: 2rem;
+  }
+
+  /* Responsive Area */
+  @media screen and (max-width: 576px) {
+    .navbar, .nav-item, .banner, .features{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .features{
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .featres-content{
+        text-align: center;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .media{
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    .products-collection{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  /* medium */
+
+  @media screen and (min-width: 576px) and (max-width: 992px ) {
+    .navbar, .nav-item, .banner, .features{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .features{
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .featres-content{
+        text-align: center;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .media{
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    .products-collection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
